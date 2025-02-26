@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  box-shadow: 10px 15px 15px lightgray;
+  border-radius: 20px;
+  width: 320px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(109, 10, 167) 45%, rgb(109, 10, 167), 45%, white);
+}
+
+img{
+  border-radius: 50%;
+  width: 100px;
+  margin: 5px;
+  border: white 4px solid;
+}
+
+.kezd{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gomb{
+  border: 0;
+  border-radius: 7px;
+  height: 40px;
+  background-color: rgb(109, 10, 167);
+  color: white;
+  padding: 7px;
+}
+
+.pk{
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+#em{
+  color: grey;
+}
+
+.tarto{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#mypopover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  color: rgb(109, 10, 167);
+}
+
+#kep{
+  display: flex;
+  justify-content:space-between ;
+}
+
+#gombok{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.delgomb{
+  border: 1px rgb(109, 10, 167) solid;
+  border-radius: 7px;
+  height: 40px;
+  color: rgb(109, 10, 167);
+  padding: 7px;
+}
+.irasok{
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea{
+  resize: vertical;
+}
+
+input, textarea{
+  border-radius: 3px;
+  border: 1px rgb(109, 10, 167) solid;
+  background-color: rgb(218, 193, 233);
+}
