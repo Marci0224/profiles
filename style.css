@@ -55,13 +55,7 @@ img{
   color: grey;
 }
 
-.tarto{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-#mypopover{
+.popoverContent{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,4 +107,9 @@ input, textarea{
   border-radius: 3px;
   border: 1px rgb(109, 10, 167) solid;
   background-color: rgb(218, 193, 233);
+}
+
+.res{
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

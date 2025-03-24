@@ -2,18 +2,15 @@ const user= { name: "Kiss Éva", age: 28, email: "eva@example.com", avatar: "htt
 
 
 
-function renderCard({name, age, email, avatar,role}){
+function renderCard({name, email, avatar,role}){
   document.querySelector(".card").innerHTML=`
     <div class="kezd">
       <img class="pk" src="${avatar}" alt="${name}">
-      <div class="tarto">
-        <h2 id="nev">${name}</h2>
-        <p id="em">${email}</p>
-        <p>${role}</p>
-        
-      </div>
+      <h2 id="nev" class="res">${name}</h2>
+      <p id="em" class="res">${email}</p>
+      <p class="res">${role}</p>
       <button popovertarget="mypopover" class="gomb">Profil szerkesztése</button>
-      <div id="mypopover" popover>
+      <div class="popoverContent" id="mypopover" popover>
         <form action="#">
           <div id="kep">
             <img src="${avatar}" alt="" id="profilkep">
