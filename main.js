@@ -11,7 +11,7 @@ function renderCard({name, email, avatar,role}){
       <p class="res">${role}</p>
       <button popovertarget="mypopover" class="gomb">Profil szerkesztése</button>
       <div class="popoverContent" id="mypopover" popover>
-        <form action="#">
+        <form>
           <div id="kep">
             <img src="${avatar}" alt="" id="profilkep">
             <div id="gombok">

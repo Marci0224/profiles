@@ -1,6 +1,7 @@
 *{
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
 }
 
 .container{
@@ -56,12 +57,10 @@ img{
 }
 
 .popoverContent{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 320px;
-  padding: 10px;
+  max-width: 800px;
+  padding: 1rem;
   border: 1px solid white;
+  color: white;
   border-radius: 10px;
 }
 
