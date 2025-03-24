@@ -15,28 +15,28 @@ function renderCard({name, email, avatar,role}){
           <div id="kep">
             <img src="${avatar}" alt="" id="profilkep">
             <div id="gombok">
-              <button class="gomb">Change picture</button>
-              <button class="delgomb">Delete picture</button>
+              <button class="gomb gb">Change picture</button>
+              <button class="delgomb gb">Delete picture</button>
             </div>
           </div>
           <div class="irasok">
             <label for="firstname">Your first name</label>
-            <input type="text" name="firstname" id="firstname">
+            <input type="text" name="firstname" id="firstname" required>
           </div>
           
           <div class="irasok">
             <label for="lastname">Your last name</label>
-            <input type="text" name="lastname" id="lastname">
+            <input type="text" name="lastname" id="lastname" required>
           </div>
           
           <div class="irasok">
             <label for="profession">Your profession</label>
-            <input type="text" name="profession" id="profession">
+            <input type="text" name="profession" id="profession" required>
           </div>
           
           <div class="irasok">
             <label for="email">Your email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
           </div>
           
           <div class="irasok">

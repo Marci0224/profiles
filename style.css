@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 .container{
   height: 100vh;
   width: 100vw;
@@ -11,11 +16,13 @@
   align-items: center;
   justify-content: center;
   background-color: whitesmoke;
+  overflow-y: scroll;
 }
 
 .card{
   display: flex;
   justify-content: center;
+  align-items: center;
   box-shadow: 10px 15px 15px lightgray;
   border-radius: 20px;
   width: 320px;
@@ -39,12 +46,14 @@ img{
 }
 
 .gomb{
-  border: 0;
+  border: white 1px solid;
   border-radius: 7px;
   height: 40px;
   background-color: rgb(109, 10, 167);
   color: white;
   padding: 7px;
+  margin-top: 5px;
+  font-size: 1.2rem;
 }
 
 .pk{
@@ -57,24 +66,37 @@ img{
 }
 
 .popoverContent{
-  max-width: 800px;
+  width: 500px;
   padding: 1rem;
   border: 1px solid white;
   color: white;
   border-radius: 10px;
+  border: 2px solid rgb(109, 10, 167);
 }
 
 form{
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: left;
   gap: 10px;
   color: rgb(109, 10, 167);
+  font-size: 1.2rem;
 }
 
 #kep{
   display: flex;
-  justify-content:space-between ;
+  justify-content: space-evenly;
+}
+
+#profilkep{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 5px;
+  border: none 4px;
+  outline-offset: 5px;
+  outline: rgb(109, 10, 167) 4px dotted;
 }
 
 #gombok{
@@ -88,10 +110,17 @@ form{
 .delgomb{
   border: 1px rgb(109, 10, 167) solid;
   border-radius: 7px;
-  height: 40px;
+  min-height: 40px;
   color: rgb(109, 10, 167);
   padding: 7px;
 }
+
+.gb{
+  width: 170px;
+  height: 60px;
+  font-size: 1.2rem;
+}
+
 .irasok{
   margin: 5px;
   display: flex;
@@ -100,6 +129,10 @@ form{
 
 textarea{
   resize: vertical;
+}
+
+input{
+  height: 40px;
 }
 
 input, textarea{
@@ -111,4 +144,46 @@ input, textarea{
 .res{
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+@media screen and (min-width:425px) and (max-width:550px) {
+  .popoverContent{
+    width: 400px;
+  }
+  .gb{
+    width: 150px;
+    height: 50px;
+  }
+  #profilkep{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width:424px) {
+  .popoverContent{
+    width: 300px;
+  }
+  .gomb{
+    height: 30px;
+    font-size: 1rem;
+  }
+  .gb{
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  #profilkep{
+    width: 120px;
+    height: 120px;
+  }
+  form{
+    font-size: 1rem;
+  }
+  input{
+    height: 30px;
+  }
+  #gombok{
+    padding: 10px;
+  }
 }
