@@ -21,27 +21,27 @@ function renderCard({name, email, avatar,role}){
           </div>
           <div class="irasok">
             <label for="firstname">Your first name</label>
-            <input type="text" name="firstname" id="firstname" required>
+            <input type="text" name="firstname" id="firstname" value="${name.split(' ')[0]}" min="1rem" max="1.2rem" required>
           </div>
           
           <div class="irasok">
             <label for="lastname">Your last name</label>
-            <input type="text" name="lastname" id="lastname" required>
+            <input type="text" name="lastname" id="lastname" value="${name.split(' ')[1]}" min="1rem" max="1.2rem" required>
           </div>
           
           <div class="irasok">
             <label for="profession">Your profession</label>
-            <input type="text" name="profession" id="profession" required>
+            <input type="text" name="profession" id="profession" value="${role}" min="1rem" max="1.2rem" required>
           </div>
           
           <div class="irasok">
             <label for="email">Your email</label>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" id="email" value="${email}" min="1rem" max="1.2rem" required>
           </div>
           
           <div class="irasok">
             <label for="bio">BIO</label>
-            <textarea name="bio" id="bio" rows="4"></textarea>
+            <textarea name="bio" id="bio" rows="4" min="1rem" max="1.2rem"></textarea>
           </div>
           <button class="gomb">Save</button>
         </form>

@@ -66,12 +66,14 @@ img{
 }
 
 .popoverContent{
+  margin: auto;
   width: 500px;
   padding: 1rem;
   border: 1px solid white;
   color: white;
   border-radius: 10px;
   border: 2px solid rgb(109, 10, 167);
+  box-shadow: 5px 5px 5px rgb(160, 47, 226);
 }
 
 form{
@@ -119,6 +121,9 @@ form{
   width: 170px;
   height: 60px;
   font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .irasok{
@@ -133,6 +138,7 @@ textarea{
 
 input{
   height: 40px;
+  font-size: 1.2rem;
 }
 
 input, textarea{
@@ -182,6 +188,7 @@ input, textarea{
   }
   input{
     height: 30px;
+    font-size: 1rem;
   }
   #gombok{
     padding: 10px;
